@@ -69,8 +69,8 @@
     <section class="about" id="about">
         <h2>about</h2>
         <div class="container-about">
-            <div class="abut-img">
-                <img src="" alt="">
+            <div class="about-img">
+                <img src="" alt="" width="100px" height="100px">
             </div>
             <div class="about-main">
                 <h4>ekstrakurikuler</h4>

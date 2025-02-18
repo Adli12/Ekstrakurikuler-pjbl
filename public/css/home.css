@@ -10,6 +10,7 @@
 body{
     margin: 0;
     padding: 0;
+    min-height: 2000vh;
 }
 
 .navbar{
@@ -139,14 +140,22 @@ body{
 }
 
 .about{
-    height: 100vh;
+    background-color: antiquewhite;
+    height: 80vh;
     padding: 0 7%;
+    scroll-margin-top: 100px;
+    margin-top: 80px;
 }
 
 .about h2{
     text-transform: capitalize;
     text-align: center;
 }
+
+.container-about{
+    display: flex;
+}
+
 
 
 @media (max-width: 768px){

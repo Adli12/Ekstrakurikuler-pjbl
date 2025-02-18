@@ -67,29 +67,21 @@
     </section>
 
     <section class="about" id="about">
-        <h2>about </h2>
-        <div class="about-container">
-            <div class="about-img">
-                <img src="img/auth.jpg" alt="img" srcset="">
+        <h2>about</h2>
+        <div class="container-about">
+            <div class="abut-img">
+                <img src="" alt="">
             </div>
-            <div class="about-content">
+            <div class="about-main">
                 <h4>ekstrakurikuler</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur qui tempora deleniti praesentium,
-                    ratione odio odit dolor dolorum? Nisi ducimus cum facilis est! Eaque nam voluptatum doloribus
-                    impedit. Sequi, quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate
-                    architecto, molestiae itaque earum illo nulla doloremque quibusdam nihil laborum natus fuga quas at
-                    voluptatum impedit enim iste quo sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-                    harum quia, sed, voluptatibus, recusandae id voluptates et sit distinctio obcaecati enim esse
-                    labore. Corrupti animi fugiat quos debitis itaque reprehenderit. Lorem ipsum dolor sit amet
-                    consectetur, adipisicing elit. Adipisci deserunt repudiandae vero repellendus minus dignissimos
-                    doloribus, aut ipsam beatae dicta laborum, nam necessitatibus id illum aspernatur velit a
-                    consectetur eius!</p>
-                <button class="btn">learn more</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magni, vel ut libero ea beatae
+                    esse
+                    temporibus adipisci saepe dignissimos cum aliquam vitae quaerat? Sunt repudiandae soluta suscipit
+                    adipisci nostrum.</p>
+                <button class="btn-learn">learn more</button>
             </div>
         </div>
-
     </section>
-
 
     <script src="js/home.js"></script>
 </body>

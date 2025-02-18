@@ -13,7 +13,7 @@ body{
 }
 
 .navbar{
-    padding: 0.2rem 5%;
+    padding: 1rem 5%;
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
@@ -26,6 +26,7 @@ body{
 }
 
 .navbar-main{
+    color: white;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -38,17 +39,17 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
-    transform: translateY(10px);
 }
 
 .navbar .navbar-nav ul{
     display: flex;
     flex-direction: row;
+    transform: translateY(8px);
 }
 .navbar-nav ul a{
-    color: black;
+    color: white;
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 0 1em;
     font-weight: 500;
 }
@@ -82,7 +83,7 @@ body{
     transition: 0.3s ease-in-out;
 }
 
-.hero{  
+.hero{
     /* width: 100vw;
     height: 100vh; */
     background-size: cover;
@@ -138,57 +139,15 @@ body{
 }
 
 .about{
-    padding: 2vh 5vw;
-    background-color: #f9f9f9;
-}
-
-.about-container{
-    display: flex;
-    max-width: 90%;
-    margin: 0;
+    height: 100vh;
+    padding: 0 7%;
 }
 
 .about h2{
+    text-transform: capitalize;
     text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 10px;
 }
 
-.about-img{
-}
-
-.about-img img{
-    width: 80%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-content{
-    transform: translateY(-25px);
-    flex: 1;
-    text-align: justify;
-}
-
-.about-content h4{
-    font-size: 1.3em;
-    text-transform: capitalize;
-}
-
-.btn{
-    padding: 0.4em 1.6em;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn:hover{
-    background-color: #0056b3;
-}
 
 @media (max-width: 768px){
     html{
@@ -233,8 +192,5 @@ body{
 
     .ekskul p{
         font-size: 0.5em;
-    }
-    .about-content p{
-        font-size: 0.9rem;
     }
 }

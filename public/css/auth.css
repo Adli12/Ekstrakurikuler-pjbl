@@ -1,5 +1,5 @@
-body{
-    background: linear-gradient(to right, #D7A6FF, #A3DCFF);
+body {
+    background: linear-gradient(to right, #d7a6ff, #a3dcff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body{
     font-style: normal;
 }
 
-.container{
+.container {
     display: flex;
     max-width: 900px;
     width: 90%;
@@ -20,31 +20,31 @@ body{
     overflow: hidden;
 }
 
-.container-content{
+.container-content {
     padding: 1% 5%;
     text-transform: capitalize;
     flex: 1;
 }
 
-.container-content h2{
+.container-content h2 {
     font-size: 1.5em;
 }
 
-.container-content #text{
+.container-content #text {
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.form-grup{
+.form-grup {
     margin-bottom: 20px;
 }
 
-.form-grup label{
+.form-grup label {
     display: block;
     margin-bottom: 5px;
 }
 
-.form-grup input{
+.form-grup input {
     width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -52,21 +52,21 @@ body{
     font-size: 0.8em;
 }
 
-.form-footer{
+.form-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1em;
 }
 
-.form-footer a{
+.form-footer a {
     color: #007bff;
     text-decoration: none;
     font-size: 0.8em;
     margin-right: 20px;
 }
 
-.btn-login{
+.btn-login {
     width: 50%;
     padding: 10px;
     background: #007bff;
@@ -79,63 +79,61 @@ body{
     margin-left: 25%;
 }
 
-.btn-login i{
+.btn-login i {
     margin-left: 10px;
 }
 
-.btn-login:hover{
+.btn-login:hover {
     background: #0056b3;
 }
 
-.account{
-    margin-top: 20px;   
+.account {
+    margin-top: 20px;
     font-size: 10px;
     margin-left: 25%;
 }
 
-.account a{
+.account a {
     color: #007bff;
     text-decoration: none;
 }
 
-.image-container{
+.image-container {
     flex: 1;
     background-size: cover;
     background-image: no-repeat center;
 }
 
-.image-container img{
+.image-container img {
     width: 100%;
     height: 100%;
 }
 
-
-@media (max-width: 768px){
-    .container-content #text{
+@media (max-width: 768px) {
+    .container-content #text {
         font-size: 0.8em;
     }
-    .form-grup label{
+    .form-grup label {
         font-size: 0.8em;
     }
-    .form-footer{
-        font-size: 0.8em ;
+    .form-footer {
+        font-size: 0.8em;
     }
-    .form-footer a{
-        font-size: 0.7em;
-        transform: translateX(-15px);
+    .form-footer a {
+        font-size: 0.8em;
     }
-    input[type="checkbox"]{
+    input[type="checkbox"] {
         position: relative;
         top: auto;
         transform: scale(0.8);
     }
-    .btn-login{
+    .btn-login {
         font-size: 0.8em;
     }
-    .account{
+    .account {
         font-size: 0.4em;
     }
-    .image-container{
+    .image-container {
         display: none;
     }
 }

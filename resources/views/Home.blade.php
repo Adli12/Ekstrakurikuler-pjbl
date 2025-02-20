@@ -85,13 +85,21 @@
                     repudiandae quae impedit aliquid pariatur quod nobis atque error, repellendus incidunt id officiis
                     voluptatibus consectetur, vel iusto minima facilis. Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Velit cupiditate optio voluptas alias, aut minima dolor ipsam</p>
-                <button class="btn-learn">learn more <i class="bi bi-arrow-right"></i></button>
+                <button class="btn-learn" id="openmodal">learn more <i class="bi bi-arrow-right"></i></button>
             </div>
         </div>
     </section>
 
     <!-- more about -->
-
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="closebtn" id="closemodal"><i class="bi bi-x-circle"></i></span>
+            <h3>informasi ekstrakurikuler</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore saepe aliquam numquam, debitis
+                corrupti magnam at asperiores voluptatibus corporis architecto ea cum delectus dignissimos sed nam
+                ipsam! Repellat, at perferendis!</p>
+        </div>
+    </div>
 
     <!-- section gallery -->
     <section class="gallery" id="gallery">

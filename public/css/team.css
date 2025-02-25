@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: #01020d;
+}
+
+.team-section {
+    margin-top: 75px;
+}
+
+.team-title h1 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.team-cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-card {
+    background-color: #060721;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    transition: transform 0.5s;
+}
+
+.team-card img {
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+}
+
+.team-card:hover {
+    transform: translateY(-12px);
+}
+
+.team-detail {
+    margin-top: 10px;
+}
+
+.team-detail h3 {
+    font-size: 1.2em;
+}
+
+.team-detail p {
+    color: #426385;
+}
+
+@media (max-width: 768px) {
+    .team-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto;
+    }
+    .team-card {
+        width: 75%;
+    }
+}

@@ -172,7 +172,9 @@
                     <a href="https://www.instagram.com/softwethre19/" target="_blank"><i
                             class="bi bi-instagram"></i></a>
                     <a href="https://www.tiktok.com/@19engineers3" target="_blank"><i class="bi bi-tiktok"></i></a>
-                    <a href="https://www.youtube.com/@rplsmkn2kotabekasi246"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.youtube.com/@rplsmkn2kotabekasi246" target="_blank"><i
+                            class="bi bi-youtube"></i></a>
+                    <a href="team"><i class="bi bi-people-fill"></i></a>
                 </div>
             </div>
 

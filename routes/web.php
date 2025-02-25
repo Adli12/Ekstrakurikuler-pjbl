@@ -15,3 +15,7 @@ Route::get('/auth', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/team', function () {
+    return view('team');
+});

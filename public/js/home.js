@@ -34,3 +34,29 @@ window.onclick = function (event) {
         document.getElementById("myModal").style.display = "none";
     }
 };
+
+// swipe
+let currentIndex = 0;
+const totalItems = document.querySelectorAll(".news-box").length;
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+const visibleItems = isMobile ? 1 : 3;
+
+function updateCarousel() {
+    let carousel = document.querySelector(".news-container");
+    let translateX = -currentIndex * (isMobile ? 100 : 33) + "%";
+    carousel.style.transform = `translateX(${translateX})`;
+}
+
+function nextSlide() {
+    if (currentIndex < totalItems - visibleItems) {
+        currentIndex++;
+        updateCarousel();
+    }
+}
+
+function prevSlide() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+    }
+}

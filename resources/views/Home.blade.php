@@ -29,6 +29,7 @@
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#news">news</a></li>
                 <li><a href="auth">login</a></li>
             </ul>
         </div>
@@ -163,6 +164,31 @@
         </div>
     </section>
 
+    <section class="news" id="news">
+        <div class="news-title">
+            <h2>news</h2>
+        </div>
+        <div class="news-container">
+            <div class="news-box">
+                <img src="" alt="">
+            </div>
+            <div class="news-box">
+                <img src="" alt="">
+            </div>
+            <div class="news-box">
+                <img src="" alt="">
+            </div>
+            <div class="news-box">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="news-controls">
+            <button onclick="prevSlide()"><i class="bi bi-chevron-left"></i></button>
+            <button onclick="nextSlide()" class="right"><i class="bi bi-chevron-right "></i></button>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-container">
             <div class="footer-info">
@@ -175,6 +201,7 @@
                     <a href="https://www.youtube.com/@rplsmkn2kotabekasi246" target="_blank"><i
                             class="bi bi-youtube"></i></a>
                     <a href="team"><i class="bi bi-people-fill"></i></a>
+                    <a href="#"><i class="bi bi-telephone"></i></a>
                 </div>
             </div>
 

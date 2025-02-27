@@ -15,6 +15,8 @@
         rel="stylesheet">
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link swipe -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -169,26 +171,41 @@
             <h2>news</h2>
         </div>
         <div class="news-container">
-            <div class="news-box">
-                <img src="" alt="">
-            </div>
-            <div class="news-box">
-                <img src="" alt="">
-            </div>
-            <div class="news-box">
-                <img src="" alt="">
-            </div>
-            <div class="news-box">
-                <img src="" alt="">
-            </div>
-        </div>
+            <ul class="news-list swiper-wrapper">
+                <li class="news-item swiper-slide">
+                    <a href="" class="news-link">
+                        <img src="img/auth.jpg" alt="" class="news-img">
+                    </a>
+                </li>
+                <li class="news-item swiper-slide">
+                    <a href="" class="news-link">
+                        <img src="img/auth.jpg" alt="" class="news-img">
+                    </a>
+                </li>
+                <li class="news-item swiper-slide">
+                    <a href="" class="news-link">
+                        <img src="img/auth.jpg" alt="" class="news-img">
+                    </a>
+                </li>
+                <li class="news-item swiper-slide">
+                    <a href="" class="news-link">
+                        <img src="img/auth.jpg" alt="" class="news-img">
+                    </a>
+                </li>
+                <li class="news-item swiper-slide">
+                    <a href="" class="news-link">
+                        <img src="img/auth.jpg" alt="" class="news-img">
+                    </a>
+                </li>
+            </ul>
 
-        <div class="news-controls">
-            <button onclick="prevSlide()"><i class="bi bi-chevron-left"></i></button>
-            <button onclick="nextSlide()" class="right"><i class="bi bi-chevron-right "></i></button>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
 
+    <!-- footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-info">
@@ -216,12 +233,18 @@
         </div>
     </footer>
 
-    <!-- footer -->
-    <script src="js/home.js"></script>
+    <!-- script aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!-- script swipe -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- link js home -->
+    <script src="js/home.js"></script>
 </body>
 
 </html>

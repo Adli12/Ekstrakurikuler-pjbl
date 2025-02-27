@@ -36,27 +36,23 @@ window.onclick = function (event) {
 };
 
 // swipe
-let currentIndex = 0;
-const totalItems = document.querySelectorAll(".news-box").length;
-const isMobile = window.matchMedia("(max-width: 768px)").matches;
-const visibleItems = isMobile ? 1 : 3;
-
-function updateCarousel() {
-    let carousel = document.querySelector(".news-container");
-    let translateX = -currentIndex * (isMobile ? 100 : 33) + "%";
-    carousel.style.transform = `translateX(${translateX})`;
-}
-
-function nextSlide() {
-    if (currentIndex < totalItems - visibleItems) {
-        currentIndex++;
-        updateCarousel();
-    }
-}
-
-function prevSlide() {
-    if (currentIndex > 0) {
-        currentIndex--;
-        updateCarousel();
-    }
-}
+new Swiper(".news-container", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: "auto", // Hanya tampilkan 3 slide per view
+    slidesPerGroup: 1,
+    centeredSlides: true, // Pastikan slide tidak berada di tengah
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: { slidesPerView: 1, slidesPerGroup: 1 },
+        768: { slidesPerView: 2, slidesPerGroup: 1 },
+        1024: { slidesPerView: 3, slidesPerGroup: 1 },
+    },
+});

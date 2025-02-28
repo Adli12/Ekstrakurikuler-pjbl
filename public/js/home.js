@@ -38,21 +38,30 @@ window.onclick = function (event) {
 // swipe
 new Swiper(".news-container", {
     loop: true,
-    spaceBetween: 10,
-    slidesPerView: "auto", // Hanya tampilkan 3 slide per view
-    slidesPerGroup: 1,
-    centeredSlides: true, // Pastikan slide tidak berada di tengah
+    spaceBetween: 20,
+    centeredSlides: true,
+    slidesPerView: "auto",
+
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: true,
     },
+
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+
     breakpoints: {
-        0: { slidesPerView: 1, slidesPerGroup: 1 },
-        768: { slidesPerView: 2, slidesPerGroup: 1 },
-        1024: { slidesPerView: 3, slidesPerGroup: 1 },
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
     },
 });

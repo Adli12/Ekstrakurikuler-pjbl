@@ -218,7 +218,6 @@
                     <a href="https://www.youtube.com/@rplsmkn2kotabekasi246" target="_blank"><i
                             class="bi bi-youtube"></i></a>
                     <a href="team"><i class="bi bi-people-fill"></i></a>
-                    <a href="#"><i class="bi bi-telephone"></i></a>
                 </div>
             </div>
 

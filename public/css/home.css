@@ -24,6 +24,7 @@ body {
     right: 0;
     position: fixed;
     z-index: 999;
+    backdrop-filter: blur(2px);
 }
 
 .navbar-main {
@@ -337,11 +338,11 @@ body {
 }
 
 .news-title {
-    font-size: 2rem;
     text-transform: capitalize;
 }
 
 .news-title h2 {
+    font-size: 2rem;
     position: relative;
 }
 

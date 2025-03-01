@@ -3,10 +3,86 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
     background-color: #01020d;
+}
+
+.navbar {
+    padding: 1rem 5%;       
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+    backdrop-filter: blur(2px);
+}
+
+.navbar-main {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar .navbar-nav ul {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(8px);
+}
+.navbar-nav ul a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 0 1em;
+    font-weight: 500;
+}
+
+.navbar #menu {
+    color: white;
+    font-size: 2em;
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-nav a:hover {
+    color: white;
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a::after {
+    content: " ";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid white;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar.scrolled {
+    background-color: #a3dcff;
+    transition: 0.3s ease-in-out;
 }
 
 .team-section {
@@ -72,5 +148,36 @@ body {
     }
     .team-card {
         width: 75%;
+    }
+    .navbar #menu {
+        display: flex;
+        z-index: 99;
+    }
+    .navbar .navbar-nav {
+        z-index: 96;
+        position: absolute;
+        top: 80%;
+        margin: 0%;
+        right: 0%;
+        height: 70vh;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        border-radius: 10px;
+        background-color: #a3dcff;
+        z-index: 999;
+    }
+
+    .navbar .navbar-nav ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+        height: 70vh;
+    }
+
+    .navbar .navbar-nav.side {
+        transform: translateX(0);
     }
 }

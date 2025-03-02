@@ -23,10 +23,10 @@
         </div>
         <div class="navbar-nav">
             <ul>
-                <li><a href="Home">home</a></li>
-                <li><a href="Home">about</a></li>
-                <li><a href="Home">Gallery</a></li>
-                <li><a href="Home">news</a></li>
+                <li><a href="/">home</a></li>
+                <li><a href="/">about</a></li>
+                <li><a href="/">Gallery</a></li>
+                <li><a href="/">news</a></li>
                 <li><a href="auth">login</a></li>
             </ul>
         </div>

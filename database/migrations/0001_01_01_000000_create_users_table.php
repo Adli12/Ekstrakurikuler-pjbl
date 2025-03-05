@@ -27,6 +27,7 @@ return new class extends Migration {
         });
 
         Schema::create('sessions', function (Blueprint $table) {
+            $table->string('id')->primary();
             $table->unsignedBigInteger('id_user')->nullable();
             $table->foreign('id_user')->references('id_user')->on('users')->onDelete('cascade');
             $table->string('ip_address', 45)->nullable();

@@ -20,14 +20,28 @@
         <div class="container-content">
             <h2>sign in</h2>
             <p id="text">login to your account</p>
-            <form action="">
+
+            @if(session('loginError'))
+                <div class="alert alert-danger">
+                    {{ session('loginError') }}
+                </div>
+            @endif
+
+            <form action="{{ route('login.post') }}" method="POST">
+                @csrf
                 <div class="form-grup">
                     <label for="username">username</label>
-                    <input type="text" name="username" placeholder="Please enter your Username">
+                    <input type="text" name="username" placeholder="Please enter your Username" autofocus required>
+                    @if($errors->has('username'))
+                        <p class="error-message">{{ $errors->first('username')  }}</p>
+                    @endif
                 </div>
                 <div class="form-grup">
                     <label for="password">password</label>
-                    <input type="password" name="password" placeholder="Please enter your password">
+                    <input type="password" name="password" placeholder="Please enter your password" required>
+                    @if($errors->has('password'))
+                        <p class="error-message">{{ $errors->first('password')  }}</p>
+                    @endif
                 </div>
                 <div class="form-footer">
                     <label for="">

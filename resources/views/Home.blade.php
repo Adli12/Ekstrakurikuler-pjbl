@@ -32,7 +32,7 @@
                 <li><a href="#about">about</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#news">news</a></li>
-                <li><a href="auth">login</a></li>
+                <li><a href="{{ route('login') }}">login</a></li>
             </ul>
         </div>
         <div class="navbar-extra">

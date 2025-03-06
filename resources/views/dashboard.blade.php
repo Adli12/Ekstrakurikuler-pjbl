@@ -68,7 +68,7 @@
                         <span class="icon">
                             <i class="bi bi-box-arrow-right"></i>
                         </span>
-                        <span class="title">log Out</span>
+                        <span class="title">{{ route('logout') }}</span>
                     </a>
                 </li>
             </ul>

@@ -53,6 +53,14 @@ body {
     border-bottom-left-radius: 30px;
 }
 
+.navigation ul li form button {
+    display: flex;
+    background: transparent;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
 .navigation ul li:hover,
 .navigation ul li.hovered {
     background-color: var(--white);
@@ -73,6 +81,11 @@ body {
 }
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
+    color: var(--blue);
+}
+
+.navigation ul li:hover a form button,
+.navigation ul li.hovered a form button {
     color: var(--blue);
 }
 
@@ -98,6 +111,9 @@ body {
     white-space: nowrap;
 }
 
+form button .title {
+    font-size: 1rem;
+}
 /* --------- curve outside ---------- */
 .navigation ul li:hover a::before,
 .navigation ul li.hovered a::before {
@@ -210,10 +226,10 @@ body {
 
 @media (max-width: 991px) {
     .navigation {
-        left: -300px;
+        left: -200px;
     }
     .navigation.active {
-        width: 300px;
+        width: 100px;
         left: 0;
     }
     .main {
@@ -230,12 +246,12 @@ body {
         min-width: 40px;
     }
     .navigation {
-        width: 100%;
+        width: 40%;
         left: -100%;
         z-index: 1000;
     }
     .navigation.active {
-        width: 100%;
+        width: 40%;
         left: 0;
     }
     .toggle {
@@ -245,6 +261,6 @@ body {
         color: #fff;
         position: fixed;
         right: 0;
-        left: initial;
+        left: auto;
     }
 }

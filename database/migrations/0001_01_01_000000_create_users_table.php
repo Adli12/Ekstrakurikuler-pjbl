@@ -11,9 +11,9 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id('id_user'); // Primary key
+            $table->id('id_user'); // Otomatis membuat id BIGINT UNSIGNED
             $table->string('name');
-            $table->string('username')->unique(); // Menggunakan username bukan email
+            $table->string('username')->unique(); // Menggunakan username, bukan email
             $table->string('password');
             $table->enum('role', ['admin', 'user'])->default('user'); // Role
             $table->rememberToken();
@@ -39,8 +39,8 @@ return new class extends Migration {
 
     public function down()
     {
-        Schema::dropIfExists('users');
-        Schema::dropIfExists('password_reset_tokens');
         Schema::dropIfExists('sessions');
+        Schema::dropIfExists('password_reset_tokens');
+        Schema::dropIfExists('users');
     }
 };

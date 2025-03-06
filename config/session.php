@@ -87,7 +87,7 @@ return [
     */
 
     'table' => env('SESSION_TABLE', 'sessions'),
-
+    'column' => 'id_user',
     /*
     |--------------------------------------------------------------------------
     | Session Cache Store
@@ -129,7 +129,7 @@ return [
 
     'cookie' => env(
         'SESSION_COOKIE',
-        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+        Str::slug(env('APP_NAME', 'laravel'), '_') . '_session'
     ),
 
     /*

@@ -9,7 +9,6 @@ Route::get('/', function () {
     return view('/Home');
 });
 
-
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -23,4 +22,8 @@ Route::get('/user/dashboard', function () {
 
 Route::get('/team', function () {
     return view('team');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });

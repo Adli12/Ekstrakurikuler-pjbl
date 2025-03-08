@@ -17,7 +17,7 @@ Route::get('/admin/dashboard', function () {
 })->name('admin.dashboard')->middleware('auth');
 
 Route::get('/user/dashboard', function () {
-    return 'User Dashboard';
+    return view('user.dashboard');
 })->name('user.dashboard')->middleware('auth');
 
 Route::get('/team', function () {

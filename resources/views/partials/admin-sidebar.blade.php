@@ -18,7 +18,8 @@
                 <form action="{{ route('logout') }}" method="POST"> @csrf <button
                         class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a] w-full text-left"
                         type="submit"><i class="fas fa-sign-out-alt mr-2"></i> <span
-                            class="sidebar-text">Logout</span></button> </form>
+                            class="sidebar-text">Logout</span></button>
+                </form>
             </li>
         </ul>
     </div>
@@ -31,4 +32,22 @@
             </div>
         </div>
     </div>
+</div>
+
+
+<!-- Bottom navigation bar for smaller screens -->
+<div class="md:hidden bg-[#1e3a8a] w-full shadow-md p-4 flex justify-between items-center fixed bottom-0">
+    <a class="flex flex-col items-center text-white" href="#"><i class="fas fa-home text-xl"></i><span
+            class="text-xs mt-1">Dashboard</span></a>
+    <a class="flex flex-col items-center text-white" href="#"><i class="fas fa-users text-xl"></i><span
+            class="text-xs mt-1">Data Anggota</span></a>
+    <a class="flex flex-col items-center text-white" href="#"><i class="fas fa-images text-xl"></i><span
+            class="text-xs mt-1">Gallery</span></a>
+    <a class="flex flex-col items-center text-white" href="#"><i class="fas fa-file-alt text-xl"></i><span
+            class="text-xs mt-1">Laporan Kegiatan</span></a>
+    <form action="{{ route('logout') }}" method="POST" class="flex flex-col items-center text-white">
+        @csrf
+        <button type="submit" class="flex flex-col items-center text-white mt-4">
+            <i class="fas fa-sign-out-alt text-xl mt-1"></i><span class="text-xs">Logout</span></button>
+    </form>
 </div>

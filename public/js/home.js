@@ -40,7 +40,7 @@ new Swiper(".news-container", {
     loop: true,
     spaceBetween: 20,
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 3,
 
     pagination: {
         el: ".swiper-pagination",

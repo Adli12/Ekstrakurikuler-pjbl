@@ -1,4 +1,4 @@
-<nav class="flex justify-between items-center mb-10 p-6 rounded shadow bg-white">
+<nav class="flex justify-between items-center mb-6 p-6 rounded shadow bg-white">
     <div class="flex items-center">
         <button class="text-black focus:outline-none max-md:hidden" id="sidebar-toggle">
             <i class="fas fa-bars text-xl"></i>
@@ -18,6 +18,6 @@
                 </li>
             </ul>
         </div>
-        
+
     </div>
 </nav>

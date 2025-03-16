@@ -14,7 +14,7 @@
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <title>
-            Dashboard admin
+            Dashboard user
         </title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">

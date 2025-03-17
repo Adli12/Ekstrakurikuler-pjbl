@@ -5,7 +5,7 @@
         </button>
         <h2 class="font-bold ml-4 md:text-2xl text-black">Dashboard</h2>
     </div>
-    <div class="relative">
+    <div class="relative z-10">
         <i class="fas fa-cog text-black cursor-pointer" id="settings-icon"></i>
         <div class="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg theme-options hidden"
             id="theme-options">

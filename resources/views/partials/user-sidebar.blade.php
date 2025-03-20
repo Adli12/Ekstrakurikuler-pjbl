@@ -1,4 +1,4 @@
-<div class="hidden md:block sidebar-shrink bg-[#1e3a8a] h-screen shadow-md transition-all duration-300" id="sidebar">
+<div class="hidden md:block sidebar-shrink bg-[#1e3a8a] h-screen shadow-md transition-all duration-300  " id="sidebar">
     <div class="pt-7 p-5">
         <h1 class="text-white font-bold mb-10 text-2xl" id="brand-name">EksSkada</h1>
         <ul>

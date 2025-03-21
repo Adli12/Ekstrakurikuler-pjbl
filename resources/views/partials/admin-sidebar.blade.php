@@ -1,24 +1,33 @@
-<div class="hidden md:block sidebar-shrink bg-[#1e3a8a] h-screen shadow-md transition-all duration-300" id="sidebar">
+<div class="hidden md:block sidebar-shrink bg-[#1e3a8a] h-screen shadow-md transition-all duration-300  " id="sidebar">
     <div class="pt-7 p-5">
         <h1 class="text-white font-bold mb-10 text-2xl" id="brand-name">EksSkada</h1>
         <ul>
-            <li class="mb-4"><a class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]"
-                    href="#"><i class="fas fa-home mr-2"></i><span class="sidebar-text">Dashboard</span></a>
+            <li class="mb-4"><a href="{{ route('admin.dashboard') }}"
+                    class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#"><i
+                        class="fas fa-home mr-2"></i><span class="sidebar-text">Dashboard</span></a>
             </li>
-            <li class="mb-4"><a class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]"
-                    href="#"><i class="fas fa-users mr-2"></i><span class="sidebar-text">Data Anggota</span></a>
+            <li class="mb-4">
+                <a href="{{ route('admin.eskul') }}"
+                    class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#"><i
+                        class="fas fa-users mr-2"></i>
+                    <span class="sidebar-text">Ekstrakurikuler</span></a>
             </li>
-            <li class="mb-4"><a class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]"
-                    href="#"><i class="fas fa-images mr-2"></i><span class="sidebar-text">Gallery</span></a>
+            <li class="mb-4"><a href="{{ route('admin.gallery') }}"
+                    class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#"><i
+                        class="fas fa-images mr-2"></i><span class="sidebar-text">Gallery</span></a>
             </li>
-            <li class="mb-4"> <a class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]"
-                    href="#"><i class="fas fa-file-alt mr-2"></i> <span class="sidebar-text">Laporan
+            <li class="mb-4"> <a href="{{ route('admin.laporan') }}"
+                    class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#"><i
+                        class="fas fa-file-alt mr-2"></i> <span class="sidebar-text">Laporan
                         Kegiatan</span> </a> </li>
             <li class="mb-4">
-                <form action="{{ route('logout') }}" method="POST"> @csrf <button
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button
                         class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a] w-full text-left"
-                        type="submit"><i class="fas fa-sign-out-alt mr-2"></i> <span
-                            class="sidebar-text">Logout</span></button>
+                        type="submit"><i class="fas fa-sign-out-alt mr-2"></i>
+                        <span class="sidebar-text">Logout</span>
+                    </button>
                 </form>
             </li>
         </ul>
@@ -47,7 +56,7 @@
             class="text-xs mt-1">Laporan Kegiatan</span></a>
     <form action="{{ route('logout') }}" method="POST" class="flex flex-col items-center text-white">
         @csrf
-        <button type="submit" class="flex flex-col items-center text-white mt-4">
+        <button type="submit" class="flex flex-col items-center text-white">
             <i class="fas fa-sign-out-alt text-xl mt-1"></i><span class="text-xs">Logout</span></button>
     </form>
 </div>

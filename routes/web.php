@@ -32,6 +32,22 @@ Route::get('/user/gallery', function () {
 Route::get('/user/laporan', function () {
     return view('user.laporan');
 })->name('user.laporan')->middleware('auth');
+// view admin
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard')->middleware('auth');
+
+Route::get('/admin/anggota', function () {
+    return view('admin.eskul');
+})->name('admin.eskul')->middleware('auth');
+
+Route::get('/admin/gallery', function () {
+    return view('admin.gallery');
+})->name('admin.gallery')->middleware('auth');
+
+Route::get('/admin/laporan', function () {
+    return view('admin.laporan');
+})->name('admin.laporan')->middleware('auth');
 
 // vieww
 Route::get('/team', function () {

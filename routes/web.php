@@ -29,9 +29,14 @@ Route::get('/user/gallery', function () {
     return view('user.gallery');
 })->name('user.gallery')->middleware('auth');
 
+Route::get('/user/absen', function () {
+    return view('user.absen');
+})->name('user.absen')->middleware('auth');
+
 Route::get('/user/laporan', function () {
     return view('user.laporan');
 })->name('user.laporan')->middleware('auth');
+
 // view admin
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');

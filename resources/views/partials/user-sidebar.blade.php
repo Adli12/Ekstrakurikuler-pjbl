@@ -1,4 +1,8 @@
-<div class="hidden md:block sidebar-shrink bg-[#1e3a8a] h-screen shadow-md transition-all duration-300  " id="sidebar">
+<div class="fixed sidebar-shrink left-0 top-0 w-64 bg-[#1e3a8a] h-screen shadow-lg transform transition-all duration-300 md:translate-x-0 md:relative md:w-60"
+    id="sidebar">
+    <button class="absolute top-4 right-4 text-white text-xl block md:hidden" id="sidebar-toggle-sidebar">
+        <i class="fas fa-bars"></i>
+    </button>
     <div class="pt-7 p-5">
         <h1 class="text-white font-bold mb-10 text-2xl" id="brand-name">EksSkada</h1>
         <ul>
@@ -15,6 +19,10 @@
             <li class="mb-4"><a href="{{ route('user.gallery') }}"
                     class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#"><i
                         class="fas fa-images mr-2"></i><span class="sidebar-text">Gallery</span></a>
+            </li>
+            <li class="mb-4"><a href="{{ route('user.absen') }}"
+                    class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#"><i
+                        class="fas fa-images mr-2"></i><span class="sidebar-text">Absen Anggota</span></a>
             </li>
             <li class="mb-4"> <a href="{{ route('user.laporan') }}"
                     class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#"><i
@@ -41,22 +49,4 @@
             </div>
         </div>
     </div>
-</div>
-
-
-<!-- Bottom navigation bar for smaller screens -->
-<div class="md:hidden bg-[#1e3a8a] w-full shadow-md p-4 flex justify-between items-center fixed bottom-0">
-    <a class="flex flex-col items-center text-white" href="#"><i class="fas fa-home text-xl"></i><span
-            class="text-xs mt-1">Dashboard</span></a>
-    <a class="flex flex-col items-center text-white" href="#"><i class="fas fa-users text-xl"></i><span
-            class="text-xs mt-1">Data Anggota</span></a>
-    <a class="flex flex-col items-center text-white" href="#"><i class="fas fa-images text-xl"></i><span
-            class="text-xs mt-1">Gallery</span></a>
-    <a class="flex flex-col items-center text-white" href="#"><i class="fas fa-file-alt text-xl"></i><span
-            class="text-xs mt-1">Laporan Kegiatan</span></a>
-    <form action="{{ route('logout') }}" method="POST" class="flex flex-col items-center text-white">
-        @csrf
-        <button type="submit" class="flex flex-col items-center text-white">
-            <i class="fas fa-sign-out-alt text-xl mt-1"></i><span class="text-xs">Logout</span></button>
-    </form>
 </div>

@@ -37,22 +37,42 @@
                 <!-- end navbar -->
 
                 <!-- Main Content -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 p-6">
-                    <div class="bg-white p-4 rounded shadow">
-                        <h3 class="text-black text-lg">Total Ekstrakurikuler</h3>
-                        <p class="text-black text-2xl font-bold">12</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 p-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md flex justify-center items-center">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold">
+                                Total Activities
+                            </h3>
+                            <p class="text-2xl">
+                                24
+                            </p>
+                        </div>
+                        <i class="fas fa-calendar-alt text-3xl text-gray-400">
+                        </i>
                     </div>
-                    <div class="bg-white p-4 rounded shadow">
-                        <h3 class="text-black text-lg">Active Users</h3>
-                        <p class="text-black text-2xl font-bold">1,234</p>
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold">
+                                Active Members
+                            </h3>
+                            <p class="text-2xl">
+                                156
+                            </p>
+                        </div>
+                        <i class="fas fa-users text-3xl text-gray-400">
+                        </i>
                     </div>
-                    <div class="bg-white p-4 rounded shadow">
-                        <h3 class="text-black text-lg">Total Prestasi</h3>
-                        <p class="text-black text-2xl font-bold">456</p>
-                    </div>
-                    <div class="bg-white p-4 rounded shadow">
-                        <h3 class="text-black text-lg">Conversion Rate</h3>
-                        <p class="text-black text-2xl font-bold">3.6%</p>
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold">
+                                Achievements
+                            </h3>
+                            <p class="text-2xl">
+                                12
+                            </p>
+                        </div>
+                        <i class="fas fa-trophy text-3xl text-gray-400">
+                        </i>
                     </div>
                 </div>
             </div>

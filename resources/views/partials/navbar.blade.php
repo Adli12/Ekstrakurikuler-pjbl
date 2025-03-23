@@ -1,6 +1,6 @@
-<nav class="flex justify-between items-center mb-6 p-6 rounded shadow bg-white">
+<nav class="flex justify-between items-center mb-6 p-6 rounded shadow bg-white transition-all duration-300">
     <div class="flex items-center">
-        <button class="text-black focus:outline-none max-md:hidden" id="sidebar-toggle">
+        <button class="text-black focus:outline-none" id="sidebar-toggle">
             <i class="fas fa-bars text-xl"></i>
         </button>
         <h2 class="font-bold ml-4 md:text-2xl text-black">Dashboard</h2>

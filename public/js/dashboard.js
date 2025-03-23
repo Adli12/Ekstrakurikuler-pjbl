@@ -10,28 +10,31 @@ function activeLink() {
 list.forEach((item) => item.addEventListener("mouseover", activeLink));
 
 // Menu Toggle
-document
-    .getElementById("sidebar-toggle")
-    .addEventListener("click", function () {
-        var sidebar = document.getElementById("sidebar");
-        var brandName = document.getElementById("brand-name");
-        var sidebarTexts = document.querySelectorAll(".sidebar-text");
-        var content = document.getElementById("content");
+const sidebarToggle = document.getElementById("sidebar-toggle");
+const sidebarToggleSidebar = document.getElementById("sidebar-toggle-sidebar");
+const sidebar = document.getElementById("sidebar");
+const brandName = document.getElementById("brand-name");
+const sidebarTexts = document.querySelectorAll(".sidebar-text");
+const content = document.getElementById("content");
 
-        if (sidebar.classList.contains("sidebar-shrink")) {
-            sidebar.classList.remove("sidebar-shrink");
-            sidebar.classList.add("sidebar-expand");
-            brandName.classList.add("hidden");
-            sidebarTexts.forEach((text) => text.classList.add("hidden"));
-            content.classList.add("ml-16"); // Sesuaikan ukuran konten saat sidebar kecil
-        } else {
-            sidebar.classList.remove("sidebar-expand");
-            sidebar.classList.add("sidebar-shrink");
-            brandName.classList.remove("hidden");
-            sidebarTexts.forEach((text) => text.classList.remove("hidden"));
-            content.classList.remove("ml-16");
-        }
-    });
+function tooglesidebar() {
+    if (sidebar.classList.contains("sidebar-shrink")) {
+        sidebar.classList.remove("sidebar-shrink");
+        sidebar.classList.add("sidebar-expand");
+        brandName.classList.add("hidden");
+        sidebarTexts.forEach((text) => text.classList.add("hidden"));
+        content.classList.add("ml-16"); // Sesuaikan ukuran konten saat sidebar kecil
+        sidebar.classList.toggle("-translate-x-full");
+    } else {
+        sidebar.classList.remove("sidebar-expand");
+        sidebar.classList.add("sidebar-shrink");
+        brandName.classList.remove("hidden");
+        sidebarTexts.forEach((text) => text.classList.remove("hidden"));
+        content.classList.remove("ml-16");
+    }
+}
+sidebarToggle.addEventListener("click", tooglesidebar);
+sidebarToggleSidebar.addEventListener("click", tooglesidebar);
 
 function changeContent(page) {
     const content = document.getElementById("content");

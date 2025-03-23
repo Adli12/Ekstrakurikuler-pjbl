@@ -28,7 +28,7 @@
     <body class="bg-white font-poppins leading-normal tracking-normal">
         <div class="flex">
             <!-- Sidebar and bottombar-->
-            @include('partials.admin-sidebar')
+            @include('partials.user-sidebar')
             <!-- end sidebar and bottombar -->
 
             <div class="flex-1 ">
@@ -148,7 +148,6 @@
                     </div>
                 </div>
             </div>
-          
 
             <script src="{{ asset('js/dashboard.js') }}"></script>
     </body>

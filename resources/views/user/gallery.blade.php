@@ -43,7 +43,7 @@
                             Achievement Gallery
                         </h2>
                         <div class="flex flex-row items-center space-x-4 w-full md:w-auto">
-                            <button class="bg-blue-500 text-white px-4 py-2 rounded w-full md:w-auto">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded w-full md:w-auto" id="openModal">
                                 + Add New Image
                             </button>
                         </div>
@@ -130,11 +130,38 @@
                             </div>
                         </div>
                     </div>
+                    <div id="modal"
+                        class="fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center w-90">
+                        <div
+                            class="bg-white p-6 rounded shadow-lg w-[90%] max-w-3xl transform transition-all duration-300">
+                            <h2 class="text-xl font-bold mb-4">Add Gallery</h2>
+                            <!-- Form Tambah gallery -->
+                            <form>
+                                <label class="block mb-2">Title</label>
+                                <input type="text" class="w-full p-2 border rounded mb-4"
+                                    placeholder="Enter Image Title">
+
+                                <label class="block mb-2">file</label>
+                                <input type="file" class="w-full p-2 border rounded mb-4" placeholder="Enter file">
+
+                                <div class="flex justify-end">
+                                    <button id="closeModal" type="button"
+                                        class="bg-red-500 text-white px-4 py-2 rounded mr-2">
+                                        Close
+                                    </button>
+                                    <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded">
+                                        Save
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <script src="{{ asset('js/dashboard.js') }}"></script>
+        <script src="{{ asset('js/user/gallery.js') }}"></script>
     </body>
 
     </html>

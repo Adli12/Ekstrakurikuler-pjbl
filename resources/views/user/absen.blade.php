@@ -50,7 +50,7 @@
                                 <i class="fas fa-search absolute left-3 top-3 text-gray-500">
                                 </i>
                             </div>
-                            <button class="bg-blue-500 text-white px-4 py-2 rounded w-full md:w-auto">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded w-full md:w-auto" id="openModal">
                                 + Add Attendance
                             </button>
                         </div>
@@ -146,10 +146,40 @@
                             Export PDF
                         </button>
                     </div>
+                    <!-- pop up -->
+                    <div id="modal"
+                        class="fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center">
+                        <div
+                            class="bg-white p-6 rounded shadow-lg w-[90%] max-w-3xl transform transition-all duration-300">
+                            <h2 class="text-xl font-bold mb-4">Absen</h2>
+                            <!-- Form Tambah Anggota -->
+                            <form>
+                                <label class="block mb-2">Name</label>
+                                <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Enter name">
+
+                                <label class="block mb-2">Class</label>
+                                <input type="email" class="w-full p-2 border rounded mb-4" placeholder="Enter class">
+
+                                <label class="block mb-2">Major</label>
+                                <input type="email" class="w-full p-2 border rounded mb-4" placeholder="Enter major">
+
+                                <div class="flex justify-end">
+                                    <button id="closeModal" type="button"
+                                        class="bg-red-500 text-white px-4 py-2 rounded mr-2">
+                                        Close
+                                    </button>
+                                    <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded">
+                                        Save
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <script src="{{ asset('js/dashboard.js') }}"></script>
+            <script src="{{ asset('js/user/absen.js') }}"></script>
     </body>
 
     </html>

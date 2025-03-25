@@ -42,7 +42,7 @@ Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard')->middleware('auth');
 
-Route::get('/admin/anggota', function () {
+Route::get('/admin/eskul', function () {
     return view('admin.eskul');
 })->name('admin.eskul')->middleware('auth');
 

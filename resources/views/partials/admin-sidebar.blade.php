@@ -12,8 +12,8 @@
             </li>
             <li class="mb-4">
                 <a href="{{ route('admin.eskul') }}"
-                    class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#"><i
-                        class="fas fa-users mr-2"></i>
+                    class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#">
+                    <i class="fas fa-archive mr-2"></i>
                     <span class="sidebar-text">Ekstrakurikuler</span></a>
             </li>
             <li class="mb-4"><a href="{{ route('admin.gallery') }}"

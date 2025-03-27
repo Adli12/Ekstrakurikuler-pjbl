@@ -77,78 +77,13 @@
                                 </tr>
                             </thead>
                             <tbody class="text-center text-black">
-                                <tr>
-                                    <td class="py-2 px-4 ">
-                                        1
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        John Doe
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        10
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        RPL
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        <i class="fas fa-edit text-gray-600 hover:text-gray-800 cursor-pointer mr-2">
-                                        </i>
-                                        <i class="fas fa-trash text-gray-600 hover:text-gray-800 cursor-pointer">
-                                        </i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-4 ">
-                                        2
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        budi
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        11
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        tkj
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        <i class="fas fa-edit text-gray-600 hover:text-gray-800 cursor-pointer mr-2">
-                                        </i>
-                                        <i class="fas fa-trash text-gray-600 hover:text-gray-800 cursor-pointer">
-                                        </i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2 px-4 ">
-                                        3
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        john
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        12
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        tsm
-                                    </td>
-                                    <td class="py-2 px-4 ">
-                                        <i class="fas fa-edit text-gray-600 hover:text-gray-800 cursor-pointer mr-2">
-                                        </i>
-                                        <i class="fas fa-trash text-gray-600 hover:text-gray-800 cursor-pointer">
-                                        </i>
-                                    </td>
-                                </tr>
+
                             </tbody>
                         </table>
                     </div>
-                    <div class="flex justify-end mt-6">
-                        <button
-                            class="bg-red-500 text-white px-6 py-2 rounded-lg shadow hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400">
-                            Export PDF
-                        </button>
-                    </div>
                 </div>
             </div>
-          
+
 
             <script src="{{ asset('js/dashboard.js') }}"></script>
     </body>

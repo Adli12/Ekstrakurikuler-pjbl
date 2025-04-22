@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekstrakurikuler</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logoicon.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/home.css">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
@@ -51,22 +51,37 @@
         <p>Berbagai pilihan ekstrakurikuler untuk mengembangkan bakat dan minatmu.</p>
         <div class="ekskul-container">
             <div class="ekskul-box">
-                <img src="img/smk2.png" alt="Ekskul 1">
+                <img src="{{ asset('img/Logo/seni (1).png') }}" alt="Ekskul 1">
             </div>
             <div class="ekskul-box">
-                <img src="img/smk2.png" alt="Ekskul 2">
+                <img src="{{ asset('img/Logo/LOGO EKSKUL BASKET 2.jpg') }}" alt="Ekskul 2">
             </div>
             <div class="ekskul-box">
-                <img src="img/smk2.png" alt="Ekskul 3">
+                <img src="{{ asset('img/Logo/LOGO EKSKUL IRMA.png') }}" alt="Ekskul 3">
             </div>
             <div class="ekskul-box">
-                <img src="img/smk2.png" alt="Ekskul 4">
+                <img src="{{ asset('img/Logo/LOGO EKSKUL JC.png') }}" alt="Ekskul 4">
             </div>
             <div class="ekskul-box">
-                <img src="img/smk2.png" alt="Ekskul 5">
+                <img src="{{ asset('img/Logo/LOGO EKSKUL PIKR.png') }}" alt="Ekskul 5">
             </div>
             <div class="ekskul-box">
-                <img src="img/smk2.png" alt="Ekskul 6">
+                <img src="{{ asset('img/Logo/seni (3).png') }}" alt="Ekskul 6">
+            </div>
+            <div class="ekskul-box">
+                <img src="{{ asset('img/Logo/LOGO EKSKUL PRAMUKA.jpg') }}" alt="Ekskul 6">
+            </div>
+            <div class="ekskul-box">
+                <img src="{{ asset('img/Logo/seni (2).png') }}" alt="Ekskul 6">
+            </div>
+            <div class="ekskul-box">
+                <img src="{{ asset('img/Logo/ec.png') }}" alt="Ekskul 6">
+            </div>
+            <div class="ekskul-box">
+                <img src="{{ asset('img/Logo/seni.png') }}" alt="Ekskul 6">
+            </div>
+            <div class="ekskul-box">
+                <img src="{{ asset('img/Logo/paskib.png') }}" alt="Ekskul 6">
             </div>
         </div>
     </section>
@@ -77,7 +92,7 @@
         <div class="container-about" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
             data-aos-duration="1000" data-aos-easing="ease-in-out">
             <div class="about-img">
-                <img src="img/auth.jpg" alt="">
+                <img src="{{ asset('img/logo.png') }}" alt="">
             </div>
             <div class="about-main">
                 <h4>ekstrakurikuler</h4>
@@ -110,8 +125,9 @@
         <div class="gallery-container" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
             data-aos-duration="1000" data-aos-easing="ease-in-out">
             <div class="gallery-item">
-                <img src="img/auth.jpg" alt="gallery">
-                <div class="info">Lorem ipsum</div>
+                <img src="{{ asset('img/Foto kegiatan/basket/basket.jpg') }}" alt="gallery"
+                    onclick="openModal(this.src)">
+                <div class="info">Basket</div>
                 <hr>
                 <div class="icon">
                     <p>100</p>
@@ -119,8 +135,18 @@
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="img/auth.jpg" alt="gallery">
-                <div class="info">Lorem ipsum</div>
+                <img src="{{ asset('img/Foto kegiatan/koppling/IMG-20250222-WA0063.jpg') }}" alt="gallery"
+                    onclick="openModal(this.src)">
+                <div class="info">Koppling</div>
+                <hr>
+                <div class="icon">
+                    <p>25</p>
+                    <i class="bi bi-people-fill"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ asset('img/Foto kegiatan/pmr/pmr.jpg') }}" alt="gallery" onclick="openModal(this.src)">
+                <div class="info">Palang Merah Remaja</div>
                 <hr>
                 <div class="icon">
                     <p>100</p>
@@ -128,8 +154,9 @@
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="img/auth.jpg" alt="gallery">
-                <div class="info">Lorem ipsum</div>
+                <img src="{{ asset('img/Foto kegiatan/WhatsApp Image 2025-04-10 at 10.08.45_73f81e3d.jpg') }}"
+                    alt="gallery" onclick="openModal(this.src)">
+                <div class="info">Futsal</div>
                 <hr>
                 <div class="icon">
                     <p>100</p>
@@ -137,8 +164,9 @@
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="img/auth.jpg" alt="gallery">
-                <div class="info">Lorem ipsum</div>
+                <img src="{{ asset('img/Foto kegiatan/WhatsApp Image 2025-04-10 at 10.12.23_5aa769f3.jpg') }}"
+                    alt="gallery" onclick="openModal(this.src)">
+                <div class="info">Pramuka</div>
                 <hr>
                 <div class="icon">
                     <p>100</p>
@@ -146,17 +174,9 @@
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="img/auth.jpg" alt="gallery">
-                <div class="info">Lorem ipsum</div>
-                <hr>
-                <div class="icon">
-                    <p>100</p>
-                    <i class="bi bi-people-fill"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="img/auth.jpg" alt="gallery">
-                <div class="info">Lorem ipsum</div>
+                <img src="{{ asset('img/Foto kegiatan/WhatsApp Image 2025-04-10 at 11.07.00_f5b300e5.jpg') }}"
+                    alt="gallery" onclick="openModal(this.src)">
+                <div class="info">Paskibra</div>
                 <hr>
                 <div class="icon">
                     <p>100</p>
@@ -174,32 +194,35 @@
             <ul class="news-list swiper-wrapper">
                 <li class="news-item swiper-slide">
                     <a href="" class="news-link">
-                        <img src="img/auth.jpg" alt="" class="news-img">
+                        <img src="{{ asset('img/Foto kegiatan/Screenshot 2025-04-10 111237.png') }}" alt=""
+                            class="news-img">
                     </a>
                 </li>
                 <li class="news-item swiper-slide">
                     <a href="" class="news-link">
-                        <img src="img/auth.jpg" alt="" class="news-img">
+                        <img src="{{ asset('img/Foto kegiatan/Screenshot 2025-04-10 111552.png') }}" alt=""
+                            class="news-img">
                     </a>
                 </li>
                 <li class="news-item swiper-slide">
                     <a href="" class="news-link">
-                        <img src="img/auth.jpg" alt="" class="news-img">
+                        <img src="{{ asset('img/Foto kegiatan/Screenshot 2025-04-10 111638.png') }}" alt=""
+                            class="news-img">
                     </a>
                 </li>
                 <li class="news-item swiper-slide">
                     <a href="" class="news-link">
-                        <img src="img/auth.jpg" alt="" class="news-img">
+                        <img src="{{ asset('img/Foto kegiatan/Screenshot 2025-04-10 112047.png') }}" alt=""
+                            class="news-img">
                     </a>
                 </li>
                 <li class="news-item swiper-slide">
                     <a href="" class="news-link">
-                        <img src="img/auth.jpg" alt="" class="news-img">
+                        <img src="{{ asset('img/Foto kegiatan/Screenshot 2025-04-10 112102.png') }}" alt=""
+                            class="news-img">
                     </a>
                 </li>
             </ul>
-
-
 
         </div>
     </section>
@@ -230,6 +253,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Popup Modal -->
+    <div id="imgModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+
 
     <!-- script aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

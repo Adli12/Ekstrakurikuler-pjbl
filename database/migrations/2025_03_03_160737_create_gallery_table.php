@@ -12,11 +12,10 @@ return new class extends Migration {
     {
         Schema::create('gallery', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_eskul');
+            $table->string('judul');
             $table->string('foto');
+            $table->date('tanggal');
             $table->timestamps();
-
-            $table->foreign('id_eskul')->references('id_eskul')->on('eskul')->onDelete('cascade');
         });
     }
 

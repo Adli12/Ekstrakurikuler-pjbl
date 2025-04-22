@@ -1,4 +1,4 @@
-<div class="fixed sidebar-shrink left-0 top-0 w-64 bg-[#1e3a8a] h-screen shadow-lg transform transition-all duration-300 md:translate-x-0 md:relative md:w-60"
+<div class="fixed sidebar-shrink left-0 top-0 w-64 bg-[#1e3a8a] h-screen shadow-lg transform transition-all duration-300 md:translate-x-0 md:relative md:w-60 z-10"
     id="sidebar">
     <button class="absolute top-4 right-4 text-white text-xl block md:hidden" id="sidebar-toggle-sidebar">
         <i class="fas fa-bars"></i>
@@ -11,10 +11,24 @@
                         class="fas fa-home mr-2"></i><span class="sidebar-text">Dashboard</span></a>
             </li>
             <li class="mb-4">
-                <a href="{{ route('admin.eskul') }}"
-                    class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#">
-                    <i class="fas fa-archive mr-2"></i>
-                    <span class="sidebar-text">Ekstrakurikuler</span></a>
+                <button onclick="toggleDropdown('eskulDropdown')"
+                    class="flex justify-between items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a] w-full">
+                    <div class="flex items-center">
+                        <i class="fas fa-archive mr-2"></i>
+                        <span class="sidebar-text">Ekstrakurikuler</span>
+                    </div>
+                    <i class="fas fa-chevron-down transition-transform duration-300" id="eskulIcon"></i>
+                </button>
+                <ul id="eskulDropdown" class="hidden pl-3 transition-all duration-300 ease-in-out overflow-hidden mt-1">
+                    @foreach($eskuls as $eskul)
+                        <li class="mb-2">
+                            <i class="far fa-circle text-white"></i>
+                            <a href="{{ route('admin.eskul', $eskul->id_eskul) }}" class="text-white">
+                                <span class="sidebar-text">{{ $eskul->nama_eskul }}</span>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
             </li>
             <li class="mb-4"><a href="{{ route('admin.gallery') }}"
                     class="flex items-center text-white p-2 rounded hover:bg-white hover:text-[#1e3a8a]" href="#"><i

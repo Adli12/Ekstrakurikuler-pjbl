@@ -1,21 +1,21 @@
 .sidebar-shrink {
-    width: 16rem;
+    width: 16rem !important;
 }
 
 .sidebar-expand {
-    width: 4rem;
+    width: 6rem !important;
 }
 
 .theme-options {
-    display: none;
+    display: none !important;
 }
 
 .theme-options.active {
-    display: block;
+    display: block !important;
 }
 
 @media (max-width: 768px) {
     .sidebar-expand {
-        transform: translateX(-100%);
+        transform: translateX(-100%) !important;
     }
 }

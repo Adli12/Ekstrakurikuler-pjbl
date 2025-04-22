@@ -65,3 +65,12 @@ new Swiper(".news-container", {
         },
     },
 });
+
+function openModal(src) {
+    document.getElementById("modalImg").src = src;
+    document.getElementById("imgModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+}

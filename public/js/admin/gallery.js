@@ -18,3 +18,18 @@ window.addEventListener("click", (e) => {
         modal.classList.add("hidden");
     }
 });
+
+//gallery pop up
+function showImageModal(imageUrl) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modalImg.src = imageUrl;
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+}
+
+function closeImageModal() {
+    const modal = document.getElementById("imageModal");
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+}

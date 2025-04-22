@@ -13,9 +13,8 @@ return new class extends Migration {
         Schema::create('laporan', function (Blueprint $table) {
             $table->id('id_laporan');
             $table->unsignedBigInteger('id_eskul');
+            $table->string('file');
             $table->date('tanggal_laporan');
-            $table->date('tanggal_dibuat');
-            $table->integer('jumlah_hadir');
             $table->timestamps();
 
             $table->foreign('id_eskul')->references('id_eskul')->on('eskul')->onDelete('cascade');
